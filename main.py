@@ -31,5 +31,5 @@ def main(stock):
 
 
 if __name__ == "__main__":
-    stock = "TSM"
+    stock = "AAPL"
     main(stock)
