@@ -27,6 +27,7 @@ smci_position = 0
 nvda_position = 0
 cash = initial_investment
 
+# am I sure?
 for i in range(len(spread)):
     if spread.iloc[i] < 0:
         # Go long on SMCI and short on NVDA
@@ -47,6 +48,8 @@ for i in range(len(spread)):
 final_value = (
     cash + smci_position * smci_data.iloc[-1] + nvda_position * nvda_data.iloc[-1]
 )
+
+
 # Plot stock prices
 plt.figure(figsize=(10, 6))
 plt.plot(smci_pct, label="SMCI")
