@@ -27,8 +27,6 @@ smci_position = 0
 nvda_position = 0
 cash = initial_investment
 
-
-
 for i in range(len(spread)):
     if spread.iloc[i] < 0:
         # Go long on SMCI and short on NVDA
