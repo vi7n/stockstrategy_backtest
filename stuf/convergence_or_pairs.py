@@ -48,23 +48,6 @@ final_value = (
     cash + smci_position * smci_data.iloc[-1] + nvda_position * nvda_data.iloc[-1]
 )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Plot stock prices
 plt.figure(figsize=(10, 6))
 plt.plot(smci_pct, label="SMCI")
