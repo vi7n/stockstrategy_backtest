@@ -16,7 +16,6 @@ nvda_data = yf.download(
 
 # Calculate the spread between SMCI and NVDA
 spread = smci_data - nvda_data
-
 # Convert values to percentage scale
 smci_pct = (smci_data / smci_data.iloc[0] - 1) * 100
 nvda_pct = (nvda_data / nvda_data.iloc[0] - 1) * 100
