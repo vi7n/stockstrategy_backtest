@@ -14,6 +14,7 @@ nvda_data = yf.download(
     nvda_symbol, start="2024-01-17", end="2024-07-17", prepost=False
 )["Adj Close"]
 
+
 # Calculate the spread between SMCI and NVDA
 spread = smci_data - nvda_data
 # Convert values to percentage scale
