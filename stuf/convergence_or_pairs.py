@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 smci_symbol = "SMCI"
 nvda_symbol = "NVDA"
 
-# Download historical data for SMCI and NVDA (excluding after-hours)
+# Download historical data for SMCI and NVDA (excluding after-hour)
 smci_data = yf.download(
     smci_symbol, start="2024-01-17", end="2024-07-17", prepost=False
 )["Adj Close"]
